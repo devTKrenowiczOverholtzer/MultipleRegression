@@ -30,3 +30,15 @@ print(f"Model Coefficients:{model_ms}\nModel Intercept:{model_b}")
 # then add  intercept to arrive at final quality 
 
 
+# Make a prediction
+# loc locate row 5 get all the columns
+row_5_prediction_values = wine_df.loc[5,:]
+# further restrict that to a list of row 5 precition values at the regression list columns
+row_5_prediction_values = [row_5_prediction_values[regression_list]]
+# quality value grab item .item()
+row_5_quality_value = wine_df.loc[5, "quality"].item()
+
+predicted_quality = linear_regression_model.predict(row_5_prediction_values)
+print(predicted_quality)
+
+# compare to single regression value :  pretty much the same didnt get that much better even with added sulphates and ph 
