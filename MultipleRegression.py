@@ -26,8 +26,8 @@ model_ms = linear_regression_model.coef_
 model_b = linear_regression_model.intercept_
 print(f"Model Coefficients:{model_ms}\nModel Intercept:{model_b}")
 
-# new regression model : take the regression list and multiply it by model coefficients (alcohol multiplied by coefficient ~.3, ph multiplied by ~.2...)
-# then add  intercept to arrive at final quality 
+# new regression model : take the regression list and multiply it by model coefficients (alcohol multiplied by coefficient ~.3, ph multiplied by ~.2...) values get added together
+# then add intercept to arrive at final quality 
 
 
 # Make a prediction
